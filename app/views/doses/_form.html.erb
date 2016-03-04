@@ -4,5 +4,7 @@
 <%= f.error_notification %>
 
 <%= f.input :description %>
+<%= f.input :ingredient_id, collection: @available_ingredients, label_method: :name, value_method: :id%>
 <%= f.button :submit %>
 <% end %>
+
